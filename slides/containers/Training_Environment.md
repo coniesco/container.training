@@ -9,11 +9,7 @@ class: title
 
 ## Our training environment
 
-- If you are attending a tutorial or workshop:
-
-  - a VM has been provisioned for each student
-
-- If you are doing or re-doing this course on your own, you can:
+- To follow along this workshop, you can
 
   - install Docker locally (as explained in the chapter "Installing Docker")
 
@@ -23,7 +19,7 @@ class: title
 
 ---
 
-## Our Docker VM
+<!-- ## Our Docker VM
 
 *This section assumes that you are following this course as part of
 a tutorial, training or workshop, where each student is given an
@@ -35,9 +31,9 @@ individual Docker VM.*
 
 - It will be destroyed shortly after the training.
 
-- It comes pre-loaded with Docker and some other useful tools.
-
----
+- It comes pre-loaded with Docker and some other useful tools. -->
+<!-- 
+--- -->
 
 ## What *is* Docker?
 
@@ -55,65 +51,7 @@ individual Docker VM.*
 
 ---
 
-## Why don't we run Docker locally?
-
-- We are going to download container images and distribution packages.
-
-- This could put a bit of stress on the local WiFi and slow us down.
-
-- Instead, we use a remote VM that has a good connectivity
-
-- In some rare cases, installing Docker locally is challenging:
-
-  - no administrator/root access (computer managed by strict corp IT)
-
-  - 32-bit CPU or OS
-
-  - old OS version (e.g. CentOS 6, OSX pre-Yosemite, Windows 7)
-
-- It's better to spend time learning containers than fiddling with the installer!
-
----
-
-## Connecting to your Virtual Machine
-
-You need an SSH client.
-
-* On OS X, Linux, and other UNIX systems, just use `ssh`:
-
-```bash
-$ ssh <login>@<ip-address>
-```
-
-* On Windows, if you don't have an SSH client, you can download:
-
-  * Putty (www.putty.org)
-
-  * Git BASH (https://git-for-windows.github.io/)
-
-  * MobaXterm (https://mobaxterm.mobatek.net/)
-
----
-
-class: in-person
-
-## `tailhist`
-
-The shell history of the instructor is available online in real time.
-
-Note the IP address of the instructor's virtual machine (A.B.C.D).
-
-Open http://A.B.C.D:1088 in your browser and you should see the history.
-
-The history is updated in real time (using a WebSocket connection).
-
-It should be green when the WebSocket is connected.
-
-If it turns red, reloading the page should fix it.
-
----
-
-## Checking your Virtual Machine
+## Checking your Docker installation
 
 Once logged in, make sure that you can run a basic Docker command:
 
@@ -142,7 +80,7 @@ Server:
 ```
 ]
 
-If this doesn't work, raise your hand so that an instructor can assist you!
+If this doesn't work, please let me know!
 
 ???
 

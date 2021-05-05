@@ -1,39 +1,3 @@
-## Accessing these slides now
-
-- We recommend that you open these slides in your browser:
-
-  @@SLIDES@@
-
-- Use arrows to move to next/previous slide
-
-  (up, down, left, right, page up, page down)
-
-- Type a slide number + ENTER to go to that slide
-
-- The slide number is also visible in the URL bar
-
-  (e.g. .../#123 for slide 123)
-
----
-
-## Accessing these slides later
-
-- Slides will remain online so you can review them later if needed
-
-  (let's say we'll keep them online at least 1 year, how about that?)
-
-- You can download the slides using that URL:
-
-  @@ZIP@@
-
-  (then open the file `@@HTML@@`)
-
-- You will find new versions of these slides on:
-
-  https://container.training/
-
----
-
 ## These slides are open source
 
 - You are welcome to use, re-use, share these slides
@@ -43,6 +7,10 @@
 - The sources of these slides are available in a public GitHub repository:
 
   https://@@GITREPO@@
+
+- The original repo for this slides:
+
+  https://github.com/jpetazzo/container.training
 
 - Typos? Mistakes? Questions? Feel free to hover over the bottom of the slide ...
 

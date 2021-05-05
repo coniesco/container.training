@@ -58,21 +58,11 @@ Each of the following items will correspond to one layer:
 
 ---
 
-class: pic
-
-## The read-write layer
-
-![layers](images/container-layers.jpg)
-
----
-
 ## Differences between containers and images
 
 * An image is a read-only filesystem.
 
-* A container is an encapsulated set of processes,
-
-  running in a read-write copy of that filesystem.
+* A container is an encapsulated set of processes running in a read-write copy of that filesystem.
 
 * To optimize container boot time, *copy-on-write* is used
   instead of regular copy.
@@ -362,8 +352,6 @@ Do specify tags:
 * When going to production.
 * To ensure that the same version will be used everywhere.
 * To ensure repeatability later.
-
-This is similar to what we would do with `pip install`, `npm install`, etc.
 
 ---
 

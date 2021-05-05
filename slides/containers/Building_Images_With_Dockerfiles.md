@@ -222,48 +222,6 @@ f9e8f1642759  About an hour ago  /bin/sh -c apt-get install fi  1.627 MB
 
 ---
 
-class: extra-details
-
-## Why `sh -c`?
-
-* On UNIX, to start a new program, we need two system calls:
-
-  - `fork()`, to create a new child process;
-
-  - `execve()`, to replace the new child process with the program to run.
-
-* Conceptually, `execve()` works like this:
-
-  `execve(program, [list, of, arguments])`
-
-* When we run a command, e.g. `ls -l /tmp`, something needs to parse the command.
-
-  (i.e. split the program and its arguments into a list.)
-
-* The shell is usually doing that.
-
-  (It also takes care of expanding environment variables and special things like `~`.)
-
----
-
-class: extra-details
-
-## Why `sh -c`?
-
-* When we do `RUN ls -l /tmp`, the Docker builder needs to parse the command.
-
-* Instead of implementing its own parser, it outsources the job to the shell.
-
-* That's why we see `sh -c ls -l /tmp` in that case.
-
-* But we can also do the parsing jobs ourselves.
-
-* This means passing `RUN` a list of arguments.
-
-* This is called the *exec syntax*.
-
----
-
 ## Shell syntax vs exec syntax
 
 Dockerfile commands that execute something can have two forms:
@@ -332,41 +290,3 @@ IMAGE         CREATED            CREATED BY                     SIZE
   * passes all arguments without extra processing
   * doesn't create an extra process
   * doesn't require `/bin/sh` to exist in the container
-
----
-
-## Pro-tip: the `exec` shell built-in
-
-POSIX shells have a built-in command named `exec`.
-
-`exec` should be followed by a program and its arguments.
-
-From a user perspective:
-
-- it looks like the shell exits right away after the command execution,
-
-- in fact, the shell exits just *before* command execution;
-
-- or rather, the shell gets *replaced* by the command.
-
----
-
-## Example using `exec`
-
-```dockerfile
-CMD exec figlet -f script hello
-```
-
-In this example, `sh -c` will still be used, but
-`figlet` will be PID 1 in the container.
-
-The shell gets replaced by `figlet` when `figlet` starts execution.
-
-This allows to run processes as PID 1 without using JSON.
-
-???
-
-:EN:- Towards automated, reproducible builds
-:EN:- Writing our first Dockerfile
-:FR:- Rendre le processus automatique et reproductible
-:FR:- Écrire son premier Dockerfile
