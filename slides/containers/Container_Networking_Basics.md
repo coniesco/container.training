@@ -224,8 +224,6 @@ We've learned how to:
 
 * Find a container's IP address.
 
-In the next chapter, we will see how to connect
-containers together without exposing their ports.
 
 ???
 

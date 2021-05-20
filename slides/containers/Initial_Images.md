@@ -271,30 +271,6 @@ jpetazzo/clock   latest    12068b93616f   12 months ago   2.433 MB
 
 ---
 
-## Searching for images
-
-We cannot list *all* images on a remote registry, but
-we can search for a specific keyword:
-
-```bash
-$ docker search marathon
-NAME                     DESCRIPTION                     STARS  OFFICIAL  AUTOMATED
-mesosphere/marathon      A cluster-wide init and co...   105              [OK]
-mesoscloud/marathon      Marathon                        31               [OK]
-mesosphere/marathon-lb   Script to update haproxy b...   22               [OK]
-tobilg/mongodb-marathon  A Docker image to start a ...   4                [OK]
-```
-
-
-* "Stars" indicate the popularity of the image.
-
-* "Official" images are those in the root namespace.
-
-* "Automated" images are built automatically by the Docker Hub.
-  <br/>(This means that their build recipe is always available.)
-
----
-
 ## Downloading images
 
 There are two ways to download images.
@@ -361,7 +337,7 @@ We've learned how to:
 
 * Understand images and layers.
 * Understand Docker image namespacing.
-* Search and download images.
+* Download images.
 
 ???
 

@@ -31,7 +31,7 @@ content:
   # - containers/Installing_Docker.md
   - containers/First_Containers.md
   - containers/Background_Containers.md
-  - containers/Start_And_Attach.md
+  # - containers/Start_And_Attach.md
   # - containers/Naming_And_Inspecting.md
   #- containers/Labels.md
   # - containers/Getting_Inside.md
@@ -47,7 +47,7 @@ content:
   #- containers/Network_Drivers.md
   # - containers/Local_Development_Workflow.md
   # - containers/Container_Network_Model.md
-  - containers/Compose_For_Dev_Stacks.md
+  # - containers/Compose_For_Dev_Stacks.md
   # - containers/Exercise_Composefile.md
 -
   # - containers/Multi_Stage_Builds.md
@@ -67,4 +67,4 @@ content:
   #- containers/Ecosystem.md
   #- containers/Orchestration_Overview.md
   - shared/thankyou.md
-  - containers/links.md
+  # - containers/links.md

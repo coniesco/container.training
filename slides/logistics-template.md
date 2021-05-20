@@ -2,18 +2,17 @@
 
 <!-- - This slide should be customized by the tutorial instructor(s). -->
 
-- Hello! I am:
+- Hello! We are:
 
-   - .emoji[👩🏻‍💻] Constanza Escobar ([@coniescof](https://twitter.com/coniescof), Montel Intergalactic Oy)
+   - .emoji[👩🏻‍💻] Constanza Escobar (Montel Intergalactic Oy) 
 
+   - .emoji[👨🏻‍💼] Ville Pouhula (Montel Intergalactic Oy) 
+
+   - .emoji[🤦] Wouter Van Hemel (Montel Intergalactic Oy)
+ 
+   - .emoji[😺] Elina Harju (Montel Intergalactic Oy) 
 
  <!-- .dummy[
-
-   - .emoji[👷🏻‍♀️] AJ ([@s0ulshake](https://twitter.com/s0ulshake), Travis CI)
-
-   - .emoji[🚁] Alexandre ([@alexbuisine](https://twitter.com/alexbuisine), Enix SAS)
-
-   - .emoji[🐳] Jérôme ([@jpetazzo](https://twitter.com/jpetazzo), Enix SAS)
 
    - .emoji[⛵] Jérémy ([@jeremygarrouste](twitter.com/jeremygarrouste), Inpiwee)
 
@@ -21,13 +20,13 @@
 
 ] -->
 
-- The workshop will run from 12 to 14 pm (hopefully)
+- The workshop will run from 15 to 17 pm
 
 <!-- - There will be a lunch break at ... -->
 
   <!-- (And coffee breaks!) -->
 
-- Feel free to interrupt for questions at any time
+- Feel free to write questions in the chat at any time
 
 - *Especially when you see full screen container pictures!*
 

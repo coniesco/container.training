@@ -19,6 +19,7 @@ We will now see how to:
 * Check the logs of a container.
 * Stop a container.
 * List stopped containers.
+* Restart a container.
 
 ---
 
@@ -276,6 +277,23 @@ CONTAINER ID  IMAGE           ...  CREATED      STATUS
 5c1dfd4d81f1  jpetazzo/clock  ...  40 min. ago  Exited (0) 40 min. ago
 b13c164401fb  ubuntu          ...  55 min. ago  Exited (130) 53 min. ago
 ```
+
+---
+
+## Restarting a container
+
+When a container has exited, it is in stopped state.
+
+It can then be restarted with the `start` command.
+
+```bash
+$ docker start <yourContainerID>
+```
+
+The container will be restarted using the same options you launched it
+with.
+
+
 
 ???
 

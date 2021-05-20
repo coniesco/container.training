@@ -158,6 +158,24 @@ sh -c "figlet -f script" salut
 
 ---
 
+## When to use exec syntax and shell syntax
+
+* shell syntax:
+
+  * is easier to write
+  * interpolates environment variables and other shell expressions
+  * creates an extra process (`/bin/sh -c ...`) to parse the string
+  * requires `/bin/sh` to exist in the container
+
+* exec syntax:
+
+  * is harder to write (and read!)
+  * passes all arguments without extra processing
+  * doesn't create an extra process
+  * doesn't require `/bin/sh` to exist in the container
+
+---
+
 ## Build and test our image
 
 Let's build it:

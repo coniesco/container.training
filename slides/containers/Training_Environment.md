@@ -80,7 +80,7 @@ Server:
 ```
 ]
 
-If this doesn't work, please let me know!
+If this doesn't work, please let us know!
 
 ???
 
